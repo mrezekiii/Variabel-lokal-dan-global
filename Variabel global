@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+//TUGAS PRAKTIKUM DIRUMAH (VARIABEL GLOBAL) 14/04/2020 MUHAMMAD REZEKI 
+int a = 2020; int b = 07;int  c = 98;
+
+int functionPertama (){
+	a = 13;
+	return a;
+	// variabel akan dihapus dari alamat memori
+}
+int functionKedua (){
+	b = 7;
+	return b;
+	// variabel akan dihapus dari alamat memori
+}
+int functionKetiga (){
+	c = 98;
+	return c;
+	// variabel akan dihapus dari alamat memori
+}
+int main (){
+	cout << "**********************************************"<< endl;
+	cout << "variabel global darii fungsi utama : " << a << endl;
+	cout << "**********************************************"<< endl;
+	cout << "variabel global dari fungsi functionPertama : " << functionPertama () <<endl;
+	cout << "**********************************************"<< endl;
+	cout << "variabel global dari fungsi functionKedua : " << functionKedua () <<endl;
+	cout << "**********************************************"<< endl;
+	cout << "variabel global dari fungsi functionKetiga : " << functionKetiga () <<endl;
+	cout << "**********************************************"<< endl;
+	return 0 ;
+}
